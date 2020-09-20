@@ -1,6 +1,16 @@
-.contents__row
-  =@posts.each do |post|
-    .content_post{style: 'background_image: url:post.image;'}
-      = simple_format(post.text)
-      %span.class:name
-        = post.name
+.header
+  .title
+    = link_to '#',root_path
+  .login
+    %ul
+      %li=link_to "新規投稿",'#'
+      %li=link_to "ログアウト",'#'
+
+.body
+  .contents__row
+    =@posts.each do |post|
+      .content_post{style: 'background_image: url:post.image;'}
+        = simple_format(post.text)
+        %span.class:name
+          = post.name
+.footer
