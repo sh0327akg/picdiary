@@ -1,16 +1,12 @@
 .header
-  .title
-    = link_to '#',root_path
-  .login
+  .header__title
+    = link_to 'picdiary.',root_path
+  .header__login
     %ul
       %li=link_to "新規投稿",'#'
       %li=link_to "ログアウト",'#'
+.nav
 
-.body
-  .contents__row
-    =@posts.each do |post|
-      .content_post{style: 'background_image: url:post.image;'}
-        = simple_format(post.text)
-        %span.class:name
-          = post.name
-.footer
+.main
+  .contents
+    .contents__row
