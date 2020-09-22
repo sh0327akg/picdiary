@@ -24,6 +24,9 @@
     text-decoration: none;
     margin: 10px 20px;
     padding: 15px;
+    &:hover{
+      cursor: pointer;
+    }
     & a{
       color: #f5f7f6;
       text-decoration: none;
@@ -35,4 +38,22 @@
   background-color: #e7e9e7;
   width: 100vw;
   height: calc(100vh - 80px);
+  padding:10px 40px;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+}
+.contents{
+  width: 320px;
+  height :360px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 0 20px 20px 0px;
+  &__img{
+    width: 100%;
+    height: 280px;
+    background-color: green;
+    border-radius: 10px 10px 0 0;
+  }
 }
