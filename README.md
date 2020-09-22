@@ -12,7 +12,6 @@
 - 新規投稿・編集・削除機能
 - ユーザー管理機能
 - タグ管理機能
-- カテゴリー分け
 
 ### 使用技術
 - 言語:Haml,　SCSS,　Ruby
@@ -40,15 +39,18 @@
 |category_id|integer|foreign_key: true|
 ###### Association
 - belongs_to: user
+- belongs_to: tags
+- has_many: categories
 
-##### categoriesテーブル
+##### tagsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false|
+|name|string||
 |ancestry|string||
 ###### Association
 - has_many: posts
-- has_ancestry
+
 ***
+
 ## トップ画面
 <a href="https://gyazo.com/18cd45971e6bf92fc413937a749ea160"><img src="https://i.gyazo.com/18cd45971e6bf92fc413937a749ea160.png" alt="Image from Gyazo" width="1242"/></a>
