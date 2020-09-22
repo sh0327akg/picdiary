@@ -58,4 +58,14 @@
     background-color: green;
     border-radius: 10px 10px 0 0;
   }
+  &__row{
+    padding-left: 10px;
+  }
+  &__subject{
+    font-size: 18px;
+  }
+}
+.name{
+  font-size: 14px;
+  color: gray;
 }
