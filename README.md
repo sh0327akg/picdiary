@@ -45,8 +45,7 @@
 ##### tagsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|string||
-|ancestry|string||
+|------|----|-------|
 ###### Association
 - has_many: posts
 
