@@ -1,24 +1,9 @@
-# README
+# 個人作成アプリ(作成中)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## picdiary
+### 作成の目的
+- 学習したことの復習
+- 気軽に記録できる備忘録として使えるものを作りたい
+- 
+### 主な機能
+- 写真、文章の記録
