@@ -1,5 +1,6 @@
 # 個人作成アプリ(作成中)
 # picdiary
+#### [github](https://github.com/sh0327akg/picdiary)
 
 ### 作成の目的
 - 学習したことの復習
