@@ -9,8 +9,12 @@
 
 .main
   .contents
-    .contents__img
+    - @posts.each do |post|
+      .contents__img{style: "background-image: url(#{post.image});"}
       .contents__row
+        %p= post.text
+        %span.name
+          = post.nickname
   .contents
     .contents__img
       .contents__row
