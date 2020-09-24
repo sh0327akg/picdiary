@@ -2,7 +2,7 @@
   .form__container
     = form_with(model: @post, local: true) do |f|
       %h3 投稿する
-      = f.text_field :name, placeholder: "Nickname"
-      = f.text_field :image, placeholder: "Image Url"
-      = f.text_area :text, placeholder: "text" , rows: "10"
+      = f.text_field :name, class: "form__nickname", placeholder: "Nickname"
+      = f.text_field :image, class: "form__imageUrl", placeholder: "Image Url"
+      = f.text_area :text, class:"form__text", placeholder: "text" , rows: "10"
       = f.submit "SEND"
