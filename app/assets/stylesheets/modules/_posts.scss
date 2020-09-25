@@ -69,19 +69,27 @@
   font-size: 14px;
   color: gray;
 }
-
+.input-area{
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
 .form{
-  text-align: center;
+  background-color: #e7e9e7;
+  width: 800px;
+  margin: auto;
   &__nickname{
-    display: block;
-    margin: 0 auto;
+    padding: 10px 40px;
+    text-align: center;
   }
-  &__imageUrl{
-    display: block;
-    margin: 0 auto;
+  &__img{
+    padding: 10px 40px;
+    text-align: center;
   }
-  &__text{
-    display: block;
-    margin: 0 auto;
+  &__textarea{
+    padding: 10px 40px;
+    text-align: center;
   }
 }
