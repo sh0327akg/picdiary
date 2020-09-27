@@ -115,9 +115,9 @@
       margin-bottom: 20px;
       border: none;
       cursor: pointer;
-      transform: 1;
+      transition: background-color .5s;
     }
-    &__btn :hover{
+    &__btn:hover{
       background-color: #bacce6;
     }
   }
