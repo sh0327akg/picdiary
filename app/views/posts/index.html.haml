@@ -8,8 +8,8 @@
 .nav
 
 .main
-  .contents
-    - @posts.each do |post|
+  - @posts.each do |post|
+    .contents
       .contents__img{style: "background-image: url(#{post.image});"}
       .contents__row
         %p.contents__subject
