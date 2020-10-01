@@ -9,10 +9,11 @@
 
 .main
   - @posts.each do |post|
-    .contents
-      .contents__img{style: "background-image: url(#{post.image});"}
-      .contents__row
-        %p.contents__subject
-          = post.subject
-        %span.name
-          = post.nickname
+    = link_to post_path(post.id) ,class:"link"do
+      .contents
+        .contents__img{style: "background-image: url(#{post.image});"}
+        .contents__row
+          %p.contents__subject
+            = post.subject
+          %span.name
+            = post.nickname
