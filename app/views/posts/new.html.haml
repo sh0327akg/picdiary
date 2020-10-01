@@ -5,9 +5,11 @@
       .form__nickname
         = f.text_field :nickname, class: "input-area", placeholder: "Nickname"
       .form__img
-        = f.text_field :image, class: "input-area", placeholder: "Image Url"
+        = f.text_field :image, class: "input-area", placeholder: "Image URL"
+      .form__subject
+        = f.text_field :subject, class: "input-area", placeholder: "Subject"
       .form__textarea
-        = f.text_area :text, class:"input-textarea", placeholder: "text" , rows: "20"
+        = f.text_area :text, class:"input-textarea", placeholder: "Text" , rows: "15"
       .submit
         = f.submit "SEND",class:"submit__btn"
       = link_to "もどる",root_path,class:"rtn-btn"
