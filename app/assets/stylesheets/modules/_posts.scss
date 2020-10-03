@@ -17,19 +17,22 @@
     display: flex;
   }
   li{
-    border: 1px solid  #f5f7f6;
-    display: inline-block;
-    border-radius: 10px;
+    width: 90px;
+    height:40px;
+    line-height: 40px;
     font-weight: bold;
     text-decoration: none;
+    text-align: center;
     margin: 10px 20px;
-    padding: 15px;
     &:hover{
       cursor: pointer;
     }
     & a{
       color: #f5f7f6;
       text-decoration: none;
+      display: block;
+      border: 1.5px solid  #f5f7f6;
+      border-radius: 5px;
     }
   }
 }
