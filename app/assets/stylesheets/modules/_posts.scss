@@ -142,3 +142,33 @@
 .rtn-btn{
   text-decoration: none;
 }
+
+.detail{
+  background-color: #e7e9e7;
+  height: calc(100vh - 80px);
+  width: 100%;
+  &__main{
+    height: 100%;
+    width: 800px;
+    background-color: #fff;
+    margin:  auto;
+    padding: 32px;
+    overflow: scroll;
+  &__title{
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+  &__image__size{
+    display: block;
+    width: 100%;
+    height: auto;
+    
+
+  }
+  &__text{
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  }
+}
