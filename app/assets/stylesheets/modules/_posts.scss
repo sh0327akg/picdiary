@@ -174,3 +174,34 @@
   }
   }
 }
+.manage{
+  margin-top: 100px;
+  text-align: center;
+  &__edit__btn{
+    text-decoration: none;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgba(69, 204, 228, 0.4);
+    color: #fff;
+    border-radius: 4px;
+    margin-right: 100px;
+    &:hover{
+      background-color: rgb(69, 204, 228);
+    }
+  }
+  &__delete__btn{
+    text-decoration: none;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgba(248, 97, 86, 0.4);
+    color: #fff;
+    border-radius: 4px;
+    &:hover{
+      background-color: rgb(248, 97, 86);
+    }
+  }
+}

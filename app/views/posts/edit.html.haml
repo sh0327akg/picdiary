@@ -18,4 +18,4 @@
         = f.text_area :text, class:"input-textarea", placeholder: "Text" , rows: "15"
       .submit
         = f.submit "SEND",class:"submit__btn"
-      = link_to "もどる",root_path,class:"rtn-btn"
+      = link_to "もどる",post_path(@post.id),class:"rtn-btn"
