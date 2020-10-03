@@ -10,7 +10,7 @@
     & a{
       color: #f5f7f6;
       text-decoration: none;
-      line-height: 80px;
+      line-height: 70px;
     }
   }
   ul{
@@ -18,7 +18,7 @@
   }
   li{
     border: 1px solid  #f5f7f6;
-    display: inline;
+    display: inline-block;
     border-radius: 10px;
     font-weight: bold;
     text-decoration: none;
@@ -127,7 +127,8 @@
     text-align: center;
     &__btn{
       color: #fff;
-      background-color: #444795;
+      background-color: #1d4f91;
+      border-radius: 25px;
       padding: 15px 60px;
       margin-bottom: 20px;
       border: none;
