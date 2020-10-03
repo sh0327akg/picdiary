@@ -1,0 +1,15 @@
+.header
+  .header__title
+    = link_to 'picdiary.',root_path
+  .header__login
+    %ul
+      %li=link_to "新規投稿",new_post_path
+      %li=link_to "ログアウト",'#'
+.detail
+  .detail__main
+    %h2.detail__main__title
+      = @post.subject
+    .detail__main__image
+      = image_tag @post.image,class:"detail__main__image__size"
+    .detail__main__text
+      = @post.text
