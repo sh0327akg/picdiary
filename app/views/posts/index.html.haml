@@ -10,14 +10,17 @@
         %li=link_to "ログイン",new_user_session_path
         %li=link_to "新規登録", new_user_registration_path
 .nav
-
-.main
-  - @posts.each do |post|
-    = link_to post_path(post.id) ,class:"link"do
-      .contents
-        .contents__img{style: "background-image: url(#{post.image});"}
-        .contents__row
-          %p.contents__subject
-            = post.subject
-          %span.name
-            = post.nickname
+- if user_signed_in?
+  .main
+    - @posts.each do |post|
+      = link_to post_path(post.id) ,class:"link"do
+        .contents
+          .contents__img{style: "background-image: url(#{post.image});"}
+          .contents__row
+            %p.contents__subject
+              = post.subject
+            %span.name
+              = post.nickname
+- else
+  = image_tag "book-1869969_1920.jpg", class:"top-image"
+    %p

@@ -36,7 +36,10 @@
     }
   }
 }
-
+.top-image{
+  //width: 100%;
+  height: calc(100vh - 80px);
+}
 .main{
   background-color: #e7e9e7;
   width: 100vw;
