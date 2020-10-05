@@ -8,8 +8,6 @@
   = form_with(model: @post, local: true) do |f|
     %h2.form-title 新規投稿
     .form
-      .form__nickname
-        = f.text_field :nickname, class: "input-area", placeholder: "Nickname"
       .form__img
         = f.text_field :image, class: "input-area", placeholder: "Image URL"
       .form__subject
