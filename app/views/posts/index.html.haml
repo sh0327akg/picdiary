@@ -19,10 +19,10 @@
           .contents__row
             %p.contents__subject
               = post.subject
-            //%span.name
-              //= post.nickname
+            %span.name
+              = post.user.nickname
 - else
-  .wrapper
+  .wrap
     .top-image-container
       = image_tag "book-1869969_1920.jpg", class:"top-image"
       %p.image__label 記録していこう！
