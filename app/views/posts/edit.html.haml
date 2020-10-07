@@ -3,7 +3,7 @@
     = link_to 'picdiary.',root_path
   .header__login
     %ul
-      %li=link_to "ログアウト",'#'
+      %li=link_to "ログアウト",destroy_user_session_path, method: :delete
 .form__main
   = form_with(model: @post, local: true) do |f|
     %h2.form-title 新規投稿

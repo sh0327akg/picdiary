@@ -4,7 +4,7 @@
   .header__login
     %ul
       %li=link_to "新規投稿",new_post_path
-      %li=link_to "ログアウト",'#'
+      %li=link_to "ログアウト",destroy_user_session_path, method: :delete
 .detail
   .detail__main
     %h2.detail__main__title
